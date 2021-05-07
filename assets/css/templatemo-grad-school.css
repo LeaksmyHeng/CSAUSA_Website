@@ -1,5 +1,5 @@
 /*
-    
+
 TemplateMo 557 Grad School
 
 https://templatemo.com/tm-557-grad-school
@@ -10,7 +10,8 @@ https://templatemo.com/tm-557-grad-school
 @import url(fontawesome.css);
 @import url("<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">");
 body {
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: Arial, sans-serif;
 }
 
 /* Basic */
@@ -132,7 +133,7 @@ a.menu-link { display: none; }
   nav[role="navigation"] li.active a {
       color: #f5a425;
   }
-  
+
   @media screen and (min-width: 951px) {
     .js nav[role="navigation"] {
       max-height: none;
@@ -165,7 +166,8 @@ a.menu-link { display: none; }
 }
 
 .main-header {
-    background-color: rgba(22,34,57,0.95);
+    /*background-color: rgba(22,34,57,0.95);*/
+    background-color: rgba(47, 75, 130, 0.95);
     height: 80px;
     position: fixed;
     z-index: 12;
@@ -311,7 +313,27 @@ a.menu-link { display: none; }
 
 .video-overlay {
     position: absolute;
-    background-color: rgba(22,34,57,0.85);
+    /*background-color: rgba(22,34,57,0.85);*/
+    /*background-color: rgba(39, 41, 45, 0.80);*/
+    background-color: rgba(39, 41, 45, 0);
+    top: 0;
+    left: 0;
+    bottom: 7px;
+    width: 100%;
+}
+
+#bg-image {
+    min-width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.image-overlay {
+    position: absolute;
+    background-color: rgba(39, 41, 45, 0);
     top: 0;
     left: 0;
     bottom: 7px;
@@ -402,13 +424,13 @@ section.features .col-4 {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #0c1228;
+  background-color: #E5A732;
   color: #fff;
-  padding: 40px;
+  padding: 25px;
 }
 
 .features-content:hover {
-    background-color: #f5a425;
+    background-color: #E75E54;//#f5a425
     box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
 }
 
@@ -596,7 +618,7 @@ section.why-us {
 }
 
 @media screen and (max-width: 767px) {
-  
+
   .tabs-content {
       text-align: center;
   }
@@ -1461,7 +1483,7 @@ section.contact form {
 }
 
 
-@media screen and (max-width: 767px) {  
+@media screen and (max-width: 767px) {
   section.contact form {
       margin-bottom: 30px;
   }
@@ -1592,3 +1614,15 @@ footer p a:hover {
     letter-spacing: 0.25px;
   }
 }
+.icon{ font-size: 1.1em; display: inline-block; line-height: inherit; }
+
+.social-icons > li > a{ height: 35px; line-height: 35px; width: 35px; border-radius: 20px;
+	overflow: hidden; z-index: 1; position: relative; margin: 0 5px 5px; text-align: center;
+	background: #887392; color: #fff; }
+
+.social-icons > li > a:after{ content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+	top: 0; z-index: -1; border-radius: 20px; background: #FFA804;
+	-webkit-transition: all .2s ease; transition: all .2s ease;
+	-webkit-transform: scale(0); transform: scale(0); }
+
+.social-icons > li > a:hover:after{ -webkit-transform: scale(1); transform: scale(1); }
