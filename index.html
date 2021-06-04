@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>CSAUSA</title>
-    <!-- favicon-->
-    <!--<link rel="logo icon" type="image/jpg" href="assets/images/csa-favicon16x16.jpg"/>-->
-    <link rel="logo icon" type="image/png" href="assets/images/csa-logo.png"/>
+  <title>CSAUSA</title>
+  <!-- favicon-->
+  <!--<link rel="logo icon" type="image/jpg" href="assets/images/csa-favicon16x16.jpg"/>-->
+  <link rel="logo icon" type="image/png" href="assets/images/csa-logo.png" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-<!--
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+  
+  <!-- Google map-->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/googleMap.css" />
+  <script src="assets/js/googleMap.js"></script>
+
     
 TemplateMo 557 Grad School
 
 https://templatemo.com/tm-557-grad-school
 
 -->
-  </head>
+</head>
 
 <body>
 
-   
+  <!-- to embeded facebook page here, we need this script here-->
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="yz4V5cIh"></script>
+
+
   <!--header-->
   <header class="main-header clearfix" role="header">
     <div class="logo">
-      <a href="#"><img src="assets/images/csa-logo.png" alt="CSAUSA logo" style="width:55px;height:55px;margin-bottom:15px;"><em>CSA</em>USA</a>
+      <a href="#"><img src="assets/images/csa-logo.png" alt="CSAUSA logo"
+          style="width:55px;height:55px;margin-bottom:15px;"><em>CSA</em>USA</a>
     </div>
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
     <nav id="menu" class="main-nav" role="navigation">
       <ul class="main-menu">
         <li><a href="#section1">Home</a></li>
-        <li><a href="#section2">Articles</a></li>
+        <li><a href="articles.html" class="external">Articles</a></li>
         <li><a href="#section3">Sponsors</a></li>
         <li class="has-submenu"><a href="#section4">About Us</a>
           <ul class="sub-menu">
-            <li><a href="#section1">Vision</a></li>
-            <li><a href="#section1">Mission</a></li>
+            <li><a href="#section1">Vision & Mission</a></li>
+            <li><a href="#section2">What We Are</a></li>
             <li><a href="#section7">Committees</a></li>
-            <li><a href="#section21">Advisors</a></li>
+            <li><a href="#section2">Org Chart</a></li>
+            <li><a href="#section21">Advisor</a></li>
           </ul>
         </li>
-        <li class="has-submenu"><a href="#section8">Events</a>
+        <li class="has-submenu"><a href="#section3">Events</a>
           <ul class="sub-menu">
             <li><a href="#section9">Upcoming-Ongoing Events</a></li>
             <li><a href="#section10">Past Events</a></li>
@@ -61,7 +72,7 @@ https://templatemo.com/tm-557-grad-school
           </ul>
         </li>
         <!-- <li><a href="#section5">Video</a></li> -->
-        <li class="has-submenu"><a href="#section12">Contact Us</a>
+        <li class="has-submenu"><a href="#section15">Contact Us</a>
           <ul class="sub-menu">
             <li><a href="#section13">Membership Information</a></li>
             <li><a href="#section14">Becoming a Membership</a></li>
@@ -70,10 +81,12 @@ https://templatemo.com/tm-557-grad-school
         </li>
         <li class="has-submenu"><a href="#section16">Social Media</a>
           <ul class="sub-menu">
-            <li><a href="https://www.facebook.com/Cambodian-Student-Association-in-the-USA-107261631515277" class="external" target="_blank">Facebook</a></li>
+            <li><a href="https://www.facebook.com/Cambodian-Student-Association-in-the-USA-107261631515277"
+                class="external" target="_blank">Facebook</a></li>
             <li><a href="https://www.instagram.com/csainusa/" class="external" target="_blank">Instagram</a></li>
             <li><a href="#" class="external" target="_blank">Twitter</a></li>
-            <li><a href="https://www.youtube.com/channel/UC-phETPE4LUZ6O-L8lR7u9Q" class="external" target="_blank">YouTube</a></li>
+            <li><a href="https://www.youtube.com/channel/UC-phETPE4LUZ6O-L8lR7u9Q" class="external"
+                target="_blank">YouTube</a></li>
             <li><a href="#" class="external" target="_blank">Discord</a></li>
           </ul>
         </li>
@@ -81,22 +94,22 @@ https://templatemo.com/tm-557-grad-school
     </nav>
   </header>
 
-<!-- ***** Main Banner Area Start ***** -->
+  <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
-      <video autoplay loop id="bg-video">
+    <!-- <video autoplay loop id="bg-video">
           <source src="assets/images/video-background.mp4" type="video/mp4" />
-      </video>
-      <!--<img src="assets/images/csa-background-image2.jpg" id="bg-image"/>-->
+      </video> -->
+    <img src="assets/images/dalise2.jpg" id="bg-image" />
 
-      <div class="video-overlay header-text">
-      <!--  <div class="image-overlay header-text">-->
-<!--          <div class="caption">-->
-<!--              &lt;!&ndash;<h6>Graduate School of Management</h6>-->
-<!--              <h2><em>Your</em> Classroom</h2>&ndash;&gt;-->
-<!--              <div class="main-button">-->
-<!--                  <div class="scroll-to-section"><a href="#section2">Learn more</a></div>-->
-<!--              </div>-->
-<!--          </div>-->
+    <div class="video-overlay header-text">
+      <div class="image-overlay header-text">
+        <div class="caption">
+          <h2><em>Cambodian Student Association</em></h2>
+          <h3>the United States of America</h3>
+          <div class="main-button">
+            <div class="scroll-to-section"><a href="#section2">Learn more</a></div>
+          </div>
+        </div>
       </div>
   </section>
 
@@ -113,9 +126,11 @@ https://templatemo.com/tm-557-grad-school
                 <h4><i class="fa fa-pencil"></i>Vision</h4>
               </div>
               <div class="content-hide">
-                <p>To establish an aspiring and supportive community for Cambodian students in the United States of America.</p>
-                <p class="hidden-sm">To establish an aspiring and supportive community for Cambodian students in the United States of America </p>
-            </div>
+                <p>To establish an aspiring and supportive community for Cambodian students in the United States of
+                  America.</p>
+                <p class="hidden-sm">To establish an aspiring and supportive community for Cambodian students in the
+                  United States of America </p>
+              </div>
             </div>
           </div>
         </div>
@@ -126,9 +141,11 @@ https://templatemo.com/tm-557-grad-school
                 <h4><i class="fa fa-graduation-cap"></i>Mission</h4>
               </div>
               <div class="content-hide">
-                <p>To connect, to share, to assist, to unlock, to strengthen and to aspire Cambodian youth to pursue higher education and unlock their potential.</p>
-                <p class="hidden-sm">To connect, to share, to assist, to unlock, to strengthen and to aspire Cambodian youth to pursue higher education and unlock their potential.</p>
-            </div>
+                <p>To connect, to share, to assist, to unlock, to strengthen and to aspire Cambodian youth to pursue
+                  higher education and unlock their potential.</p>
+                <p class="hidden-sm">To connect, to share, to assist, to unlock, to strengthen and to aspire Cambodian
+                  youth to pursue higher education and unlock their potential.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -141,7 +158,7 @@ https://templatemo.com/tm-557-grad-school
               <div class="content-hide">
                 <p>To connect all Cambodian Students in the United States.</p>
                 <p class="hidden-sm">To connect all Cambodian Students in the United States.</p>
-            </div>
+              </div>
             </div>
           </div>
         </div>
@@ -149,132 +166,157 @@ https://templatemo.com/tm-557-grad-school
     </div>
   </section>
 
-<!--  <section class="section why-us" data-section="section2">-->
-<!--    <div class="container">-->
-<!--      <div class="row">-->
-<!--        <div class="col-md-12">-->
-<!--          <div class="section-heading">-->
-<!--            <h2>Why choose Grad School?</h2>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="col-md-12">-->
-<!--          <div id='tabs'>-->
-<!--            <ul>-->
-<!--              <li><a href='#tabs-1'>Best Education</a></li>-->
-<!--              <li><a href='#tabs-2'>Top Management</a></li>-->
-<!--              <li><a href='#tabs-3'>Quality Meeting</a></li>-->
-<!--            </ul>-->
-<!--            <section class='tabs-content'>-->
-<!--              <article id='tabs-1'>-->
-<!--                <div class="row">-->
-<!--                  <div class="col-md-6">-->
-<!--                    <img src="assets/images/choose-us-image-01.png" alt="">-->
-<!--                  </div>-->
-<!--                  <div class="col-md-6">-->
-<!--                    <h4>Best Education</h4>-->
-<!--                    <p>Grad School is free educational HTML template with Bootstrap 4.5.2 CSS layout. Feel free to use it for educational or commercial purposes. You may want to make <a href="https://paypal.me/templatemo" target="_parent" rel="sponsored">a little donation</a> to TemplateMo. Please tell your friends about us. Thank you.</p>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </article>-->
-<!--              <article id='tabs-2'>-->
-<!--                <div class="row">-->
-<!--                  <div class="col-md-6">-->
-<!--                    <img src="assets/images/choose-us-image-02.png" alt="">-->
-<!--                  </div>-->
-<!--                  <div class="col-md-6">-->
-<!--                    <h4>Top Level</h4>-->
-<!--                    <p>You can modify this HTML layout by editing contents and adding more pages as you needed. Since this template has options to add dropdown menus, you can put many HTML pages.</p> -->
-<!--                    <p>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </article>-->
-<!--              <article id='tabs-3'>-->
-<!--                <div class="row">-->
-<!--                  <div class="col-md-6">-->
-<!--                    <img src="assets/images/choose-us-image-03.png" alt="">-->
-<!--                  </div>-->
-<!--                  <div class="col-md-6">-->
-<!--                    <h4>Quality Meeting</h4>-->
-<!--                    <p>You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. For more information, you shall <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact TemplateMo</a> now.</p>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </article>-->
-<!--            </section>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>What is CSAUSA?</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>Who We Are</a></li>
+              <li><a href='#tabs-2'>Our Committees</a></li>
+              <li><a href='#tabs-3'>Org Chart</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <!-- <img src="assets/images/choose-us-image-01.png" alt=""> -->
+                    <video autoplay loop style="width:90%;height:90%;">
+                         <source src="assets/media/DaliseAndLyda.mp4" type="video/mp4" />
+                    </video> -->
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Who We Are</h4>
+                    <p>We are Cambodian Student Association in the United States of America. Unlike a traditional
+                      student association. We are not belong to any school in particular, yet we are a group of students
+                      currently studying and locating in various parts of the United States.</p>
+                    <p>We are supported and endorsed by the Royal Embassy of Cambodia to the United States of
+                      America. We are unique individules pursing to
+                      foster and empower all Cambodian students in the U.S.</p>
+                    <p>We aim to create a plateform which all of us can connect and help each other accomplishing our
+                      dreams. "We Rise by Lifting Each Other".</p>
+                    <!-- <a
+                        href="https://paypal.me/templatemo" target="_parent" rel="sponsored">a little donation</a> to
+                      TemplateMo. Please tell your friends about us. Thank you.</p> -->
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4>Meet Our Members</h4>
+                    <p>Our co-founders and members are studying in various colleges and universities across the U.S.</p>
+                    <p>Zoom in to see our members who live in the state with you, and better yet attending the same college as you?.</p>
+                    <p>Sure, if you would like to connect with them, you can find their contact information in the members section.</p>
+                    <div class="main-button">
+                      <a href="#section7">Our Committees</a>
+                    </a></div>
+                 
+                   
+                  </div>
+                  <div class="col-md-6">
+                    <!-- map -->
+                    <div id="map"></div>
+                    <div id="content">
+                      <a href="https://www.facebook.com/CamboSAUSA" target="_blank">
+                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsPkpa2teW-tm0sG_Il0sGIt2lAgLx2xAFpA&usqp=CAU"/>
+                      </a>
+                    </div>
 
-<!--  <section class="section coming-soon" data-section="section3">-->
-<!--    <div class="container">-->
-<!--      <div class="row">-->
-<!--        <div class="col-md-7 col-xs-12">-->
-<!--          <div class="continer centerIt">-->
-<!--            <div>-->
-<!--              <h4>Take <em>any online course</em> and win $326 for your next class</h4>-->
-<!--              <div class="counter">-->
+                    <div id="content2">
+                      <a href="https://www.facebook.com/CamboSAUSA" target="_blank">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlZSA7byVlEnAay0IKtP3EezWY2oiGMNLGBg&usqp=CAU"/>
+                      </a>
+                    </div>
 
-<!--                <div class="days">-->
-<!--                  <div class="value">00</div>-->
-<!--                  <span>Days</span>-->
-<!--                </div>-->
+                    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                    <script
+                      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+                      async
+                    ></script>
+                
+                  </div>
+      
+                </div>
+              </article>
+              <article id='tabs-3'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/org-chart.png" alt="" style="width:100%;height:100%;">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Org Chart</h4>
+                    <p>Like a traditional student assocation. We have President, Vice President, and Committees. We
+                      serve in different areas.
+                      <!-- <a rel="nofollow"
+                        href="https://templatemo.com/contact" target="_parent">contact TemplateMo</a> now.</p> -->
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<!--                <div class="hours">-->
-<!--                  <div class="value">00</div>-->
-<!--                  <span>Hours</span>-->
-<!--                </div>-->
+  </section>
 
-<!--                <div class="minutes">-->
-<!--                  <div class="value">00</div>-->
-<!--                  <span>Minutes</span>-->
-<!--                </div>-->
+  <section class="section coming-soon" data-section="section3">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <div class="continer centerIt">
+            <div>
+              <h4>Follow CSAUSA's<br/><em>News & Events</em></h4>
+              <div class="fb-page" data-href="https://www.facebook.com/CamboSAUSA" data-tabs="timeline" data-width="600" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/CamboSAUSA" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/CamboSAUSA">Cambodian Student Association in the USA</a></blockquote></div>
+              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCamboSAUSA%2Fposts%2F107297641511676%3A0&show_text=true&width=500" width="500" height="400" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 ">
+          <div class="right-content eventsContact">
+            <div class="top-content">
+              <h6>Interested in learning more about <em>Events & Workshops</em>? Let us know below.</h6>
+            </div>
+            <form id="eventsContact" action="" method="get" onsubmit="return false">
+              <div class="row">
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="email" type="email" class="form-control" id="email" placeholder="Your Email"
+                      required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <textarea name="comments" type="text" class="form-control" id="comments"
+                      placeholder="You Comments..." required=""></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="button">Let's Connect</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!--                <div class="seconds">-->
-<!--                  <div class="value">00</div>-->
-<!--                  <span>Seconds</span>-->
-<!--                </div>-->
-
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="col-md-5">-->
-<!--          <div class="right-content">-->
-<!--            <div class="top-content">-->
-<!--              <h6>Register your free account and <em>get immediate</em> access to online courses</h6>-->
-<!--            </div>-->
-<!--            <form id="contact" action="" method="get">-->
-<!--              <div class="row">-->
-<!--                <div class="col-md-12">-->
-<!--                  <fieldset>-->
-<!--                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">-->
-<!--                  </fieldset>-->
-<!--                </div>-->
-<!--                <div class="col-md-12">-->
-<!--                  <fieldset>-->
-<!--                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">-->
-<!--                  </fieldset>-->
-<!--                </div>-->
-<!--                <div class="col-md-12">-->
-<!--                  <fieldset>-->
-<!--                    <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="">-->
-<!--                  </fieldset>-->
-<!--                </div>-->
-<!--                <div class="col-md-12">-->
-<!--                  <fieldset>-->
-<!--                    <button type="submit" id="form-submit" class="button">Get it now</button>-->
-<!--                  </fieldset>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </form>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
-
-  <section class="section courses" data-section="section7">
+  <section id="section7" class="section courses" data-section="section7">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
@@ -290,39 +332,49 @@ https://templatemo.com/tm-557-grad-school
               <p>President.</p>
               <div class="author-image">
                 <a rel="nofollow" href="https://www.linkedin.com/in/disovankiriboung/" target="_parent">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 21" data-supported-dps="84x21" fill="#0e76a8" class="mercado-match" width="84" height="21" focusable="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 21" data-supported-dps="84x21" fill="#0e76a8"
+                    class="mercado-match" width="84" height="21" focusable="false">
                     <g>
                       <g class="background-mercado">
-                        <path d="M12.5 2.75a1.75 1.75 0 101.8 1.75 1.75 1.75 0 00-1.8-1.75zM11 8h3v10h-3zM22.34 7.76A4.06 4.06 0 0019 9.39V8h-3v10h3v-5a2.31 2.31 0 012.16-2.48c1.1 0 1.84.82 1.84 2.44V18h3v-6.25c0-3.06-1.89-3.99-3.66-3.99zM82.5 0h-18A1.5 1.5 0 0063 1.5v18a1.5 1.5 0 001.5 1.5h18a1.5 1.5 0 001.5-1.5v-18A1.5 1.5 0 0082.5 0zM69 18h-3V8h3zM67.5 6.25a1.75 1.75 0 111.8-1.75 1.75 1.75 0 01-1.8 1.75zM81 18h-3v-5.09c0-1.62-.74-2.44-1.84-2.44A2.31 2.31 0 0074 13v5h-3V8h3v1.39a4.06 4.06 0 013.3-1.63c1.77 0 3.66.93 3.66 4zM3 3H0v15h9v-3H3V3zM57 9a4.23 4.23 0 00-3.17-1.3A4.9 4.9 0 0049 12.94a5 5 0 004.87 5.36 3.78 3.78 0 003.31-1.61V18H60V3h-3zm-2.54 6.8A2.57 2.57 0 0151.9 13a2.55 2.55 0 012.56-2.8A2.63 2.63 0 0157.1 13a2.6 2.6 0 01-2.64 2.8zM38.04 8H34.4l-3.34 4.04H31V3h-3v15h3v-4.81h.06L34.48 18h3.75l-4.06-5.5L38.04 8z"></path>
-                        <path d="M43.13 7.7A5 5 0 0038 12.87a5.11 5.11 0 005.24 5.43 5.5 5.5 0 004.39-1.94l-1.93-1.3a3.28 3.28 0 01-2.4 1 2.24 2.24 0 01-2.38-2V14h7v-.77C48 9.52 45.85 7.7 43.13 7.7zm-2.2 4.3a2.16 2.16 0 012.21-2.1 2 2 0 012 2.1z"></path>
+                        <path
+                          d="M12.5 2.75a1.75 1.75 0 101.8 1.75 1.75 1.75 0 00-1.8-1.75zM11 8h3v10h-3zM22.34 7.76A4.06 4.06 0 0019 9.39V8h-3v10h3v-5a2.31 2.31 0 012.16-2.48c1.1 0 1.84.82 1.84 2.44V18h3v-6.25c0-3.06-1.89-3.99-3.66-3.99zM82.5 0h-18A1.5 1.5 0 0063 1.5v18a1.5 1.5 0 001.5 1.5h18a1.5 1.5 0 001.5-1.5v-18A1.5 1.5 0 0082.5 0zM69 18h-3V8h3zM67.5 6.25a1.75 1.75 0 111.8-1.75 1.75 1.75 0 01-1.8 1.75zM81 18h-3v-5.09c0-1.62-.74-2.44-1.84-2.44A2.31 2.31 0 0074 13v5h-3V8h3v1.39a4.06 4.06 0 013.3-1.63c1.77 0 3.66.93 3.66 4zM3 3H0v15h9v-3H3V3zM57 9a4.23 4.23 0 00-3.17-1.3A4.9 4.9 0 0049 12.94a5 5 0 004.87 5.36 3.78 3.78 0 003.31-1.61V18H60V3h-3zm-2.54 6.8A2.57 2.57 0 0151.9 13a2.55 2.55 0 012.56-2.8A2.63 2.63 0 0157.1 13a2.6 2.6 0 01-2.64 2.8zM38.04 8H34.4l-3.34 4.04H31V3h-3v15h3v-4.81h.06L34.48 18h3.75l-4.06-5.5L38.04 8z">
+                        </path>
+                        <path
+                          d="M43.13 7.7A5 5 0 0038 12.87a5.11 5.11 0 005.24 5.43 5.5 5.5 0 004.39-1.94l-1.93-1.3a3.28 3.28 0 01-2.4 1 2.24 2.24 0 01-2.38-2V14h7v-.77C48 9.52 45.85 7.7 43.13 7.7zm-2.2 4.3a2.16 2.16 0 012.21-2.1 2 2 0 012 2.1z">
+                        </path>
                       </g>
                     </g>
                   </svg>
-                  </a>
-                </div>
-<!--              <div class="text-button-free">-->
-<!--                <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>-->
-<!--              </div>-->
+                </a>
+              </div>
+              <div class="text-button-free">
+                <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
+              </div>
             </div>
           </div>
           <div class="item">
             <img src="assets/images/Bong Kimmy.jfif" alt="Course #2">
             <div class="down-content">
-              <h4>Vannikathara Dee (Kimmy)</h4>
+              <h4>Kimmy Dee</h4>
               <p>Director of Public Relation</p>
               <div class="author-image">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 21" data-supported-dps="84x21" fill="#0e76a8" class="mercado-match" width="84" height="21" focusable="false">
-                    <g>
-                      <g class="background-mercado">
-                        <path d="M12.5 2.75a1.75 1.75 0 101.8 1.75 1.75 1.75 0 00-1.8-1.75zM11 8h3v10h-3zM22.34 7.76A4.06 4.06 0 0019 9.39V8h-3v10h3v-5a2.31 2.31 0 012.16-2.48c1.1 0 1.84.82 1.84 2.44V18h3v-6.25c0-3.06-1.89-3.99-3.66-3.99zM82.5 0h-18A1.5 1.5 0 0063 1.5v18a1.5 1.5 0 001.5 1.5h18a1.5 1.5 0 001.5-1.5v-18A1.5 1.5 0 0082.5 0zM69 18h-3V8h3zM67.5 6.25a1.75 1.75 0 111.8-1.75 1.75 1.75 0 01-1.8 1.75zM81 18h-3v-5.09c0-1.62-.74-2.44-1.84-2.44A2.31 2.31 0 0074 13v5h-3V8h3v1.39a4.06 4.06 0 013.3-1.63c1.77 0 3.66.93 3.66 4zM3 3H0v15h9v-3H3V3zM57 9a4.23 4.23 0 00-3.17-1.3A4.9 4.9 0 0049 12.94a5 5 0 004.87 5.36 3.78 3.78 0 003.31-1.61V18H60V3h-3zm-2.54 6.8A2.57 2.57 0 0151.9 13a2.55 2.55 0 012.56-2.8A2.63 2.63 0 0157.1 13a2.6 2.6 0 01-2.64 2.8zM38.04 8H34.4l-3.34 4.04H31V3h-3v15h3v-4.81h.06L34.48 18h3.75l-4.06-5.5L38.04 8z"></path>
-                        <path d="M43.13 7.7A5 5 0 0038 12.87a5.11 5.11 0 005.24 5.43 5.5 5.5 0 004.39-1.94l-1.93-1.3a3.28 3.28 0 01-2.4 1 2.24 2.24 0 01-2.38-2V14h7v-.77C48 9.52 45.85 7.7 43.13 7.7zm-2.2 4.3a2.16 2.16 0 012.21-2.1 2 2 0 012 2.1z"></path>
-                      </g>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 21" data-supported-dps="84x21" fill="#0e76a8"
+                  class="mercado-match" width="84" height="21" focusable="false">
+                  <g>
+                    <g class="background-mercado">
+                      <path
+                        d="M12.5 2.75a1.75 1.75 0 101.8 1.75 1.75 1.75 0 00-1.8-1.75zM11 8h3v10h-3zM22.34 7.76A4.06 4.06 0 0019 9.39V8h-3v10h3v-5a2.31 2.31 0 012.16-2.48c1.1 0 1.84.82 1.84 2.44V18h3v-6.25c0-3.06-1.89-3.99-3.66-3.99zM82.5 0h-18A1.5 1.5 0 0063 1.5v18a1.5 1.5 0 001.5 1.5h18a1.5 1.5 0 001.5-1.5v-18A1.5 1.5 0 0082.5 0zM69 18h-3V8h3zM67.5 6.25a1.75 1.75 0 111.8-1.75 1.75 1.75 0 01-1.8 1.75zM81 18h-3v-5.09c0-1.62-.74-2.44-1.84-2.44A2.31 2.31 0 0074 13v5h-3V8h3v1.39a4.06 4.06 0 013.3-1.63c1.77 0 3.66.93 3.66 4zM3 3H0v15h9v-3H3V3zM57 9a4.23 4.23 0 00-3.17-1.3A4.9 4.9 0 0049 12.94a5 5 0 004.87 5.36 3.78 3.78 0 003.31-1.61V18H60V3h-3zm-2.54 6.8A2.57 2.57 0 0151.9 13a2.55 2.55 0 012.56-2.8A2.63 2.63 0 0157.1 13a2.6 2.6 0 01-2.64 2.8zM38.04 8H34.4l-3.34 4.04H31V3h-3v15h3v-4.81h.06L34.48 18h3.75l-4.06-5.5L38.04 8z">
+                      </path>
+                      <path
+                        d="M43.13 7.7A5 5 0 0038 12.87a5.11 5.11 0 005.24 5.43 5.5 5.5 0 004.39-1.94l-1.93-1.3a3.28 3.28 0 01-2.4 1 2.24 2.24 0 01-2.38-2V14h7v-.77C48 9.52 45.85 7.7 43.13 7.7zm-2.2 4.3a2.16 2.16 0 012.21-2.1 2 2 0 012 2.1z">
+                      </path>
                     </g>
-                  </svg>
-                </div>
-<!--              <div class="text-button-pay">-->
-<!--                <a rel="nofollow" href="https://www.linkedin.com/in/kimmy-dee/" target="_parent">Info >></a>-->
-<!--              </div>-->
+                  </g>
+                </svg>
+              </div>
+              <div class="text-button-pay">
+                <a rel="nofollow" href="https://www.linkedin.com/in/kimmy-dee/" target="_parent">Info >></a>
+              </div>
             </div>
           </div>
           <div class="item">
@@ -371,72 +423,98 @@ https://templatemo.com/tm-557-grad-school
               <h4>Povheng Yam</h4>
               <p>Art Director</p>
               <div class="text-button-pay">
-                  <a rel="nofollow" href="https://yampovheng.wixsite.com/website" target="_parent">
-                    <img src="assets/images/heng101.png" alt="">
-                  </a>
+                <a rel="nofollow" href="https://yampovheng.wixsite.com/website" target="_parent">
+                  <img src="assets/images/heng101.png" alt="">
+                </a>
               </div>
             </div>
           </div>
-<!--          <div class="item">-->
-<!--            <img src="assets/images/courses-03.jpg" alt="">-->
-<!--            <div class="down-content">-->
-<!--              <h4>Senghoung Lim</h4>-->
-<!--              <p>You can get free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>-->
-<!--              <div class="author-image">-->
-<!--                <img src="assets/images/author-03.png" alt="">-->
-<!--              </div>-->
-<!--              <div class="text-button-pay">-->
-<!--                <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--&lt;!&ndash;          <div class="item">&ndash;&gt;-->
-<!--            <img src="assets/images/courses-04.jpg" alt="">-->
-<!--            <div class="down-content">-->
-<!--              <h4>Dalise Chhe</h4>-->
-<!--              <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>-->
-<!--              <div class="text-button-pay">-->
-<!--                <a href="#">Info <i class="fa fa-angle-double-right"></i></a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="item">-->
-<!--            <img src="assets/images/courses-04.jpg" alt="">-->
-<!--            <div class="down-content">-->
-<!--              <h4>Linda Im</h4>-->
-<!--              <p>Art Director</p>-->
-<!--              <div class="text-button-pay">-->
-<!--                <a href="#">Info <i class="fa fa-angle-double-right"></i></a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
+          <div class="item">
+            <img src="assets/images/courses-03.jpg" alt="">
+            <div class="down-content">
+              <h4>Learn HTML CSS</h4>
+              <p>You can get free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
+              <div class="author-image">
+                <img src="assets/images/author-03.png" alt="">
+              </div>
+              <div class="text-button-pay">
+                <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/courses-04.jpg" alt="">
+            <div class="down-content">
+              <h4>Social Media</h4>
+              <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.
+              </p>
+              <div class="author-image">
+                <img src="assets/images/author-04.png" alt="">
+              </div>
+              <div class="text-button-pay">
+                <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/courses-05.jpg" alt="">
+            <div class="down-content">
+              <h4>Digital Arts</h4>
+              <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+              <div class="author-image">
+                <img src="assets/images/author-05.png" alt="">
+              </div>
+              <div class="text-button-free">
+                <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/courses-01.jpg" alt="">
+            <div class="down-content">
+              <h4>Media Streaming</h4>
+              <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.
+              </p>
+              <div class="author-image">
+                <img src="assets/images/author-01.png" alt="">
+              </div>
+              <div class="text-button-pay">
+                <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  
+
+
 
   <section class="section video" data-section="section7">
     <div class="container">
       <div class="row">
         <div class="col-md-6 align-self-center">
           <div class="left-content">
-            <span>our presentation is for you</span>
-            <h4>Watch the video to learn more <em>about CSAUSA</em></h4>
-<!--            -->
-            <p>CSAUSA is established by a group of young Enthusiastic students who love to connect to people. We aim to create a aspire and warmth community for Cambodian Students who have come to study in the United State. You may contact us for details.
-            <br><br>If you want to learn more about our community and be part of it, select the button down below. </p>
-            <div class="main-button"><a rel="nofollow" href="https://fb.com/templatemo" target="_parent">External URL</a></div>
+            <!-- <span>Meet our founder and president to learn more.</span> -->
+            <h4>Meet our president to learn more <em>about CSAUSA</em></h4>
+            <!--            -->
+            <p>CSAUSA is established by a group of young Enthusiastic students who love to connect to people. We aim to
+              create a aspire and warmth community for Cambodian Students who have come to study in the United State.
+              You may contact us for details.
+              <br><br>If you want to learn more about our community and be part of it, select the button down below.
+            </p>
+            <div class="main-button"><a rel="nofollow" href="https://docs.google.com/forms/d/1V_lQvjcaZCCAkTT5xrBMCebYSXoPh_nwRYugyeEmYe0/edit" target="_parent">Join Us at No Cost
+                </a></div>
           </div>
         </div>
         <div class="col-md-6">
           <article class="video-item">
-            <div class="video-caption">
+            <!-- <div class="video-caption">
               <h4>CSAUSA Q&A</h4>
-            </div>
-            <figure>
-              <a href="https://www.youtube.com/watch?v=r9LtOG6pNUw" class="play"><img src="assets/images/main-thumb.png"></a>
-            </figure>
+            </div> -->
+            <iframe width="550" height="500" src="https://www.youtube.com/embed/9pmlwtK0kEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </iframe>
+
           </article>
         </div>
       </div>
@@ -452,32 +530,34 @@ https://templatemo.com/tm-557-grad-school
           </div>
         </div>
         <div class="col-md-6">
-        
-        <!-- Do you need a working HTML contact-form script?
+
+          <!-- Do you need a working HTML contact-form script?
                 	
                     Please visit https://templatemo.com/contact page -->
-                    
+
           <form id="contact" action="" method="post">
             <div class="row">
               <div class="col-md-6">
-                  <fieldset>
-                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
-                  </fieldset>
-                </div>
-                <div class="col-md-6">
-                  <fieldset>
-                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
-                  </fieldset>
-                </div>
-              <div class="col-md-12">
                 <fieldset>
-                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                  <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                </fieldset>
+              </div>
+              <div class="col-md-6">
+                <fieldset>
+                  <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
                 </fieldset>
               </div>
               <div class="col-md-12">
                 <fieldset>
-<!--                  <a href="mailto:csainus@gmail.com">SEND MESSAGE NOW</a>-->
-                  <button type="submit" id="form-submit" class="button" href="mailto:csainus@gmail.com">Send Message Now</button>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..."
+                    required=""></textarea>
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <!--                  <a href="mailto:csainus@gmail.com">SEND MESSAGE NOW</a>-->
+                  <button type="submit" id="form-submit" class="button" href="mailto:csainus@gmail.com">Send Message
+                    Now</button>
                 </fieldset>
               </div>
             </div>
@@ -485,7 +565,8 @@ https://templatemo.com/tm-557-grad-school
         </div>
         <div class="col-md-6">
           <div id="map">
-            <iframe src="https://www.google.com/maps/d/u/1/embed?mid=16AchgaX0VQpxBCA3DQ4Z5Iy-5tbde9XI" width="640" height="480"></iframe>
+            <iframe src="https://www.google.com/maps/d/u/1/embed?mid=16AchgaX0VQpxBCA3DQ4Z5Iy-5tbde9XI" width="540"
+              height="425"></iframe>
           </div>
         </div>
       </div>
@@ -495,66 +576,70 @@ https://templatemo.com/tm-557-grad-school
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/video.js"></script>
-    <script src="assets/js/slick-slider.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/email_send.js"></script>
-    <script>
-        //according to loftblog tut
-        $('.nav li:first').addClass('active');
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/slick-slider.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/email_send.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-        var showSection = function showSection(section, isAnimate) {
+  <script>
+    //according to loftblog tut
+    $('.nav li:first').addClass('active');
+
+    var showSection = function showSection(section, isAnimate) {
+      var
+        direction = section.replace(/#/, ''),
+        reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+        reqSectionPos = reqSection.offset().top - 0;
+
+      if (isAnimate) {
+        $('body, html').animate({
+          scrollTop: reqSectionPos
+        },
+          800);
+      } else {
+        $('body, html').scrollTop(reqSectionPos);
+      }
+
+    };
+
+    var checkSection = function checkSection() {
+      $('.section').each(function () {
+        var
+          $this = $(this),
+          topEdge = $this.offset().top - 80,
+          bottomEdge = topEdge + $this.height(),
+          wScroll = $(window).scrollTop();
+        if (topEdge < wScroll && bottomEdge > wScroll) {
           var
-          direction = section.replace(/#/, ''),
-          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-          reqSectionPos = reqSection.offset().top - 0;
+            currentId = $this.data('section'),
+            reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+          reqLink.closest('li').addClass('active').
+            siblings().removeClass('active');
+        }
+      });
+    };
 
-          if (isAnimate) {
-            $('body, html').animate({
-              scrollTop: reqSectionPos },
-            800);
-          } else {
-            $('body, html').scrollTop(reqSectionPos);
-          }
+    $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+      if ($(e.target).hasClass('external')) {
+        return;
+      }
+      e.preventDefault();
+      $('#menu').removeClass('active');
+      showSection($(this).attr('href'), true);
+    });
 
-        };
-
-        var checkSection = function checkSection() {
-          $('.section').each(function () {
-            var
-            $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-            if (topEdge < wScroll && bottomEdge > wScroll) {
-              var
-              currentId = $this.data('section'),
-              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-              reqLink.closest('li').addClass('active').
-              siblings().removeClass('active');
-            }
-          });
-        };
-
-        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
-          if($(e.target).hasClass('external')) {
-            return;
-          }
-          e.preventDefault();
-          $('#menu').removeClass('active');
-          showSection($(this).attr('href'), true);
-        });
-
-        $(window).scroll(function () {
-          checkSection();
-        });
-    </script>
+    $(window).scroll(function () {
+      checkSection();
+    });
+  </script>
 </body>
+
 </html>
