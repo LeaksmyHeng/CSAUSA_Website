@@ -16,6 +16,12 @@ body {
 
 /* Basic */
 
+#wrapper {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
 a {
 	color: #3CF;
     text-decoration: none;
@@ -33,8 +39,8 @@ ul {
 }
 
 p {
-    font-size: 13px;
-    line-height: 22px;
+    font-size: 18px !important;
+    line-height: 25px;
 }
 
 
@@ -57,9 +63,9 @@ p {
 .section-heading h2 {
     margin-top: 100px;
     position: relative;
-    font-size: 18px;
-    font-weight: 500;
-    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    color: gold;
     letter-spacing: 0.5px;
     display: inline-block;
     padding: 15px 20px;
@@ -70,7 +76,7 @@ p {
 /* Buttons */
 
 .main-button a {
-    background-color: #f5a425;
+    background-color: #E5A732;;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
@@ -79,6 +85,7 @@ p {
     padding: 12px 20px;
     display: inline-block;
     outline: none;
+    margin-top: 20px;
 }
 
 a.menu-link { display: none; }
@@ -131,7 +138,7 @@ a.menu-link { display: none; }
   }
   nav[role="navigation"] li:hover a,
   nav[role="navigation"] li.active a {
-      color: #f5a425;
+      color: gold;
   }
 
   @media screen and (min-width: 951px) {
@@ -167,7 +174,7 @@ a.menu-link { display: none; }
 
 .main-header {
     /*background-color: rgba(22,34,57,0.95);*/
-    background-color: rgba(47, 75, 130, 0.95);
+    background-color: #162238;
     height: 80px;
     position: fixed;
     z-index: 12;
@@ -189,7 +196,7 @@ a.menu-link { display: none; }
 }
 .main-header .logo a em {
     font-style: normal;
-    color: #f5a425;
+    color: gold;
 }
 
 .main-menu {
@@ -271,13 +278,13 @@ a.menu-link { display: none; }
 }
 
 .main-menu li .sub-menu li a:hover {
-    color: #f5a425;
+    color: gold;
     border: none;
 }
 
 .main-nav li:hover a,
 .main-nav li.active a {
-    border: 2px solid #f5a425;
+    border: 2px solid gold;
 }
 
 @media (max-width: 950px) {
@@ -333,7 +340,7 @@ a.menu-link { display: none; }
 
 .image-overlay {
     position: absolute;
-    background-color: rgba(39, 41, 45, 0);
+    background-color: rgba(39, 41, 45, 0.40);
     top: 0;
     left: 0;
     bottom: 7px;
@@ -361,17 +368,35 @@ a.menu-link { display: none; }
 .main-banner .caption h2 {
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 64px;
+  font-size: 40px;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.main-banner .caption h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #fff;
   letter-spacing: 1px;
 }
 
 .main-banner .caption h2 em {
   font-style: normal;
-  color: #f5a425;
-  font-weight: 900;
+  /* color: gold; */
+  color: gold;
+  font-weight: 800;
+}
+
+
+.main-banner .caption h3 em {
+  font-style: normal;
+  color: gold;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 1180px) {
@@ -381,7 +406,11 @@ a.menu-link { display: none; }
   }
 
   .main-banner .caption h2 {
-    font-size: 58px;
+    font-size: 40px;
+  }
+
+  .main-banner .caption h3 {
+    font-size: 30px;
   }
 
 }
@@ -393,6 +422,10 @@ a.menu-link { display: none; }
 
   .main-banner .caption h2 {
     font-size: 36px;
+  }
+
+  .main-banner .caption h3 {
+    font-size: 26px;
   }
 
 }
@@ -430,7 +463,7 @@ section.features .col-4 {
 }
 
 .features-content:hover {
-    background-color: #E75E54;//#f5a425
+    background-color: #E75E54;
     box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
 }
 
@@ -512,7 +545,7 @@ section.features .col-4 {
 /* Why Choosing Us */
 
 section.why-us {
-    background-image: url(../images/choosing-bg.jpg);
+    background-image: url(../images/main-slider-02.jpg);
     background-color: #172238;
     background-repeat: no-repeat;
     background-size: cover;
@@ -546,7 +579,7 @@ section.why-us {
 }
 #tabs ul li a {
   display: block;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
   cursor: pointer;
@@ -587,22 +620,22 @@ section.why-us {
 #tabs ul .ui-tabs-active {
 }
 #tabs ul .ui-tabs-active a {
-  color: #f5a425;
+  color: gold;
 }
 #tabs ul .ui-tabs-active a:after {
-  background-color: #f5a425;
+  background-color: gold;
   width: 15px;
   height: 15px;
 }
 #tabs ul .ui-tabs-active a:before {
-  border-color: #f5a425;
+  border-color: gold;
 }
 #tabs h4 {
     margin-top: 60px;
     font-size: 32px;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #fff;
+    color: gold;
     margin-bottom: 30px;
 }
 
@@ -643,7 +676,7 @@ section.why-us {
 /* Coming Soon */
 
 section.coming-soon {
-    background-image: url(../images/coming-soon-bg.jpg);
+    background-image: url(../images/main-slider-03.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
@@ -654,7 +687,7 @@ section.coming-soon .continer .counter div {
   display: inline-block;
 }
 section.coming-soon .continer h4 {
-    margin-top: 100px;
+    margin-top: 20px;
     font-size: 30px;
     color: #fff;
     font-weight: 800;
@@ -664,7 +697,7 @@ section.coming-soon .continer h4 {
 }
 section.coming-soon .continer h4 em {
     font-style: normal;
-    color: #f5a425;
+    color: gold;
 }
 
 @media screen and (max-width: 767px) {
@@ -727,7 +760,7 @@ section.coming-soon .continer .counter .seconds .value {
 section.coming-soon .continer .counter span {
     font-size: 18px;
     text-transform: uppercase;
-    color: #f5a425;
+    color: gold;
     font-weight: 500;
     letter-spacing: 1px;
     margin-top: 0px;
@@ -752,7 +785,7 @@ section.coming-soon .top-content {
 }
 
 section.coming-soon .top-content h6 {
-    font-size: 14px;
+    font-size: 18px;
     color: #fff;
     background-color: rgba(250,250,250,0.2);
     padding: 40px;
@@ -797,9 +830,36 @@ section.coming-soon form::placeholder { color: #fff }
 section.coming-soon form input::placeholder { color: #fff; }
 section.coming-soon form input::placeholder { color: #fff; }
 
+
+section.coming-soon form textarea {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(250,250,250,0.1);
+  border-radius: 0px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+section.coming-soon form textarea:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  background-color: rgba(250,250,250,0.1);
+}
+
+section.coming-soon form::placeholder { color: #fff }
+section.coming-soon form textarea::placeholder { color: #fff; }
+section.coming-soon form textarea::placeholder { color: #fff; }
+
+
 section.coming-soon form button {
     margin-top: 10px;
-    background-color: #f5a425;
+    background-color: #E5A732;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
@@ -853,7 +913,7 @@ section.courses .item .down-content p {
 
 section.courses .item .down-content img {
     width: 40px;
-    border: 2px solid #f5a425;
+    border: 2px solid gold;
     border-radius: 50%;
     text-align: left;
     display: inline-block;
@@ -866,7 +926,7 @@ section.courses .item .down-content .text-button-pay {
 }
 
 section.courses .item .down-content .text-button-pay a {
-    color: #f5a425;
+    color: gold;
     font-size: 13px;
 }
 
@@ -897,7 +957,7 @@ section.courses .owl-carousel button.owl-dot {
     outline: none;
 }
 section.courses .owl-carousel button.active {
-    background-color: #f5a425;
+    background-color: gold;
 }
 
 
@@ -935,7 +995,7 @@ section.video .left-content h4 {
 }
 section.video .left-content h4 em {
     font-style: normal;
-    color: #f5a425;
+    color: gold;
 }
 
 section.video .left-content .main-button {
@@ -980,7 +1040,7 @@ section.video .left-content .main-button {
   margin-top: -32.5px;
   margin-left: -32.5px;
   border-radius: 50%;
-  background-color: #f5a425;
+  background-color: gold;
   z-index: 10;
 }
 .video-item figure a:after {
@@ -996,7 +1056,7 @@ section.video .left-content .main-button {
   z-index: 10;
 }
 .video-item figure a:hover:before {
-  background-color: #f5a425;
+  background-color: gold;
 }
 
 .video-item .video-caption {
@@ -1481,7 +1541,9 @@ section.contact form {
     padding: 30px;
     width: 100%;
 }
-
+.eventsContact{
+  margin-top: 85px;
+}
 
 @media screen and (max-width: 767px) {
   section.contact form {
@@ -1535,7 +1597,7 @@ section.contact form textarea::placeholder { color: #fff; }
 section.contact form textarea::placeholder { color: #fff; }
 
 section.contact form button {
-    background-color: #f5a425;
+    background-color: #E5A732;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
@@ -1567,7 +1629,7 @@ footer p {
 
 footer p a,
 footer p a:hover {
-    color: #f5a425;
+    color: gold;
 }
 
 @media screen and (max-width: 992px) {
@@ -1616,12 +1678,12 @@ footer p a:hover {
 }
 .icon{ font-size: 1.1em; display: inline-block; line-height: inherit; }
 
-.social-icons > li > a{ height: 35px; line-height: 35px; width: 35px; border-radius: 20px;
+.social-icons > li > a{ height: 35px; line-height: 35px; width: 35px; border-radius: 20px; 
 	overflow: hidden; z-index: 1; position: relative; margin: 0 5px 5px; text-align: center;
 	background: #887392; color: #fff; }
 
 .social-icons > li > a:after{ content: ''; position: absolute; bottom: 0; left: 0; right: 0;
-	top: 0; z-index: -1; border-radius: 20px; background: #FFA804;
+	top: 0; z-index: -1; border-radius: 20px; background: #FFA804; 
 	-webkit-transition: all .2s ease; transition: all .2s ease;
 	-webkit-transform: scale(0); transform: scale(0); }
 
