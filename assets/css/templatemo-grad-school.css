@@ -662,6 +662,14 @@ section.why-us {
     width: 100%;
     overflow: hidden;
     padding-right: 45px;
+    opacity: 2;
+}
+#tabs-3 img {
+  padding: 0px !important;
+}
+
+#tabs-1 video{
+  opacity: .9;
 }
 
 @media screen and (max-width: 767px) {
