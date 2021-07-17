@@ -10,14 +10,13 @@ window.addEventListener("DOMContentLoaded", function () {
 
   eventsContact.addEventListener("submit", function (ev) {
       Email.send({
-        SecureToken: "cbc604db-b1ee-44ca-b2f8-960e9c0575af",
+        SecureToken: "2834f690-5827-4fb4-a227-a145d1faec4c",
         To: "testcsausa@gmail.com",
         From: senderEmail,
         Subject: "Contact Us by Our Prospective Member",
         Body: "Name:" + senderName + "<br/>Email: " + senderEmail + "<br/>Comments: " + senderMessage
       }).then(msg => alert("Your message was successfully sent"))
-      $("#eventsContact").trigger("reset");
-      // window.location.reload();
+      // $("#eventsContact").trigger("reset");
     });
 
 
