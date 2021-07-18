@@ -9,22 +9,111 @@ body {
 
 /* Basic */
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-html{
-font-size: 10px;
-font-family: 'Montserrat', sans-serif;
-}
-
 a {
 	color: #3CF;
     text-decoration: none;
 }
 
+a:hover {
+	color: #FC3;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+p {
+    font-size: 22px;
+    line-height: 27px;
+}
+
+
+/* Buttons */
+
+.main-button a {
+    background-color: #f5a425;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    padding: 12px 20px;
+    display: inline-block;
+    outline: none;
+}
+
+a.menu-link { display: none; }
+
+@media screen and (max-width: 950px) {
+  a.menu-link {
+    float: right;
+    display: block;
+    font-size: 36px;
+    color: #fff;
+    padding-right: 30px;
+    padding-top: 15px;
+  }
+  nav[role="navigation"] {
+    clear: both;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .js nav[role="navigation"] {
+    overflow: hidden;
+    max-height: 0;
+  }
+  nav[role="navigation"].active {
+    max-height: 20em;
+    height: 20em;
+    overflow-y: scroll;
+  }
+  nav[role="navigation"] ul {
+    top: 0;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(250,250,250,0.25);
+    background-color: rgba(22,34,57,0.99);
+  }
+  nav[role="navigation"] li a {
+    display: block;
+    padding: 15px 0px;
+    border-bottom: 1px solid rgba(250,250,250,0.25);
+    text-align: justify;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  nav[role="navigation"] li:hover a,
+  nav[role="navigation"] li.active a {
+      color: #f5a425;
+  }
+
+  @media screen and (min-width: 951px) {
+    .js nav[role="navigation"] {
+      max-height: none;
+    }
+
+    nav[role="navigation"] li {
+      display: inline-block;
+      margin: 0 0.25em;
+    }
+    nav[role="navigation"] li a {
+      border: 0;
+    }
+  }
+}
+
+/* Header */
 
 @media screen and (max-width: 1050px) {
   .main-header .logo {
@@ -61,184 +150,64 @@ a {
     font-weight: 800;
     color: #fff;
 }
-
 .main-header .logo a em {
     font-style: normal;
     color: #f5a425;
 }
 
-
-section{
-padding: 15rem 0;
-background-color: #fff;
+.main-menu {
+    float: right;
+    padding-right: 60px;
 }
 
-.heading{
-text-transform: uppercase;
-font-size: 3.5rem;
-letter-spacing: 3px;
-margin-right: -2px;
-margin-bottom: 5rem;
-text-align: center;
-color: #333;
-position: relative;
+.main-menu li {
+    display: inline-block;
+    line-height: 79px;
+    margin-left: 15px;
+    position: relative;
 }
 
-.heading::after{
-content:"";
-width: 20rem;
-height: .8rem;
-position: absolute;
-bottom: -2rem;
-left: 50%;
-transform: translateX(-50%);
-border-radius: 1rem;
-}
-
-.card-wrapper{
-display: flex;
-align-items: center;
-align-content: center;
-flex-direction: column;
-}
-
-.card{
-width: 32rem;
-background-color: #ebeef8;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin: 1rem 0;
-box-shadow: .5rem .5rem 3rem rgba(0,0,0,.2);
-}
-
-.card .card-img{
-width: 100%;
-height: 30rem;
-object-fit: cover;
--webkit-clip-path: polygon(10% 0, 100% 0, 100% 10%, 100% 100%, 90% 100%, 9% 100%, 0 100%, 0 0);
-clip-path: polygon(10% 0, 100% 0, 100% 10%, 100% 100%, 90% 100%, 9% 100%, 0 100%, 0 0);
-}
-
-.profile-img{
-width: 15rem;
-height: 15rem;
-object-fit: cover;
-border-radius: 50%;
-margin-top: -11rem;
-z-index: 999;
-border: 1rem solid #ebeef8;
-}
-
-.card h1{
-font-size: 2.5rem;
-color: #333;
-margin: 1.5rem 0;
-}
-
-
-.job-title{
-font-size: 1.5rem;
-color: #777;
-font-weight: 300;
-}
-
-.about{
-font-size: 1.5rem;
-margin: 1.5rem 0;
-font-style: italic;
-text-align: center;
-color: #333;
-}
-
-.card .btn{
-padding: 1rem 2.5rem;
-background-color: #445ae3;
-border-radius: 2rem;
-margin: 1rem 0;
-text-transform: uppercase;
-color: #eee;
-font-size: 2rem;
-transition: all .5s;
-}
-
-.card .btn:hover{
-transform: translateY(-1px);
-box-shadow: .5rem .5rem 2rem rgba(0,0,0,0.2);
-}
-
-.card .btn:active{
-transform: translateY(0);
-box-shadow: none;
-}
-
-
-.social-media{
-width: 100%;
-list-style: none;
-display: flex;
-justify-content: spacing-evenly;
-padding: 2rem 0;
-margin-top: 1.5 rem;
-border-top: 1px solid rgba(0,0,0,0.1);
-}
-
-.social-media i{
-font-size: 3rem;
-transition: color .5s
-}
-
-.fa-facebook-square{
-color: #3b5999;
-}
-
-.fa-twitter-square{
-color: #55acee;
-}
-
-.fa-instagram{
-color: #e6683c;
-}
-
-.fa-facebook-square:hover,
-.fa-twitter-square:hover,
-.fa-instagram:hover{
-color: #45e19f
-}
-
-/* responsive session for labtop and monitor */
-
-@media screen and (min-width: 1000px){
-.card-wrapper{
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    }
-.card{
-    margin: 1rem
-    transition: opacity .5s;
-    }
-
-@keyframes fadeIn {
-from{opacity:0;}
-to{opacity: 1;}
-
-.card:nth-child(1){
-animation: fadeIn .5s .5s backwards;}
-
-.card:nth-child(2){
-animation: fadeIn .5s .1s backwards;}
-
-.card:nth-child(3){
-animation: fadeIn .5s 1.5s backwards;}
-
-.card:nth-child(4){
-animation: fadeIn .5s 2s backwards;}
-}
+.main-menu li:first-child {
+    margin-left: 0px;
 }
 
 .darken-background {
+    position: absolute;
     background-color: rgba(22,34,57,0.85);
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Body */
+
+section.membership_information .left-content {
+  color: #fff;
+}
+
+section.membership_information .left-content span {
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+
+}
+
+section.membership_information .left-content h4 {
+    margin-top: 150px;
+    /* CSAUSA title font */
+    font-size: 40px;
+    color: #fff;
+    font-weight: 5000;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    margin-bottom: 40px;
+
+}
+
+/* CSAUSA Executive Board */
+section.membership_information .left-content h4 em {
+    font-style: normal;
+    color: #f5a425;
+
 }
